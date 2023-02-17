@@ -19,6 +19,9 @@
     pointer-events: none;
 }
 
-#obstacles {
+#obstacles, #egg, #toad, #larva, #toads {
+    display: none;
+}
+#bull {
     display: none;
 }
