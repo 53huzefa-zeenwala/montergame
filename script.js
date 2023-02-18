@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
   ctx.fillStyle = "white";
   ctx.lineWidth = 3;
   ctx.strokeStyle = "black";
-  ctx.font = "40px Helvetica"
+  ctx.font = "40px Bangers"
   ctx.textAlign = "center"
 
   class Player {
@@ -528,9 +528,9 @@ window.addEventListener("load", function () {
           message1 = "Bullocks!!"
           message2 = "You Lost! " + this.lostHatcheling + " hatchlings, don't be a pushover!" 
         }
-        context.font = "130px Helvetica"
+        context.font = "130px Bangers"
         context.fillText(message1, this.width * 0.5, this.height * 0.5 - 30)
-        context.font = "40px Helvetica"
+        context.font = "40px Bangers"
         context.fillText(message2, this.width * 0.5, this.height * 0.5 + 30)
         context.fillText("Final score " + this.score + ". Press 'R',to butt heads again!", this.width * 0.5, this.height * 0.5 + 80)
         context.restore()
@@ -569,6 +569,7 @@ window.addEventListener("load", function () {
         y: this.height * 0.5,
         pressed: false,
       };
+      this.fps = 60
       this.init()
     }
     init() {
